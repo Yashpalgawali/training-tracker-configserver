@@ -10,6 +10,6 @@ public class TrainingTrackerConfigserverApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TrainingTrackerConfigserverApplication.class, args);
+	
 	}
-
 }
