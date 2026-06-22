@@ -85,7 +85,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>trainingtrackerconfigserver</finalName>
+		<finalName>configservertrainingtracker</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
