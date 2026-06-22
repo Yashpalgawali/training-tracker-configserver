@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>training-tracker-configserver</artifactId>
+	<artifactId>aaaconfigservertrainingtracker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>training-tracker-configserver</name>
@@ -85,7 +85,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>configservertrainingtracker</finalName>
+		<finalName>aaaconfigservertrainingtracker</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
