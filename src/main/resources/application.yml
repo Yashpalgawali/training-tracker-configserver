@@ -1,0 +1,44 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: aaaconfigservertrainingtracker
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Yashpalgawali/training-tracker-config.git
+          force-pull: true
+          clone-on-start: true
+          default-label: main
+          timeout: 5
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+server:
+  servlet:
+    context-path: /aaaconfigservertrainingtracker
+  port: 8071
+encrypt:
+  key: 1a57a671f809d9137134caecc3a407fcc99094f25e7d4b0d68bec67259b460c5
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          actuate: DEBUG
+        cloud:
+          config: DEBUG
