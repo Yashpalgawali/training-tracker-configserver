@@ -24,8 +24,10 @@ server:
   servlet:
     context-path: /aaaconfigservertrainingtracker
   port: 8071
+
 encrypt:
   key: 1a57a671f809d9137134caecc3a407fcc99094f25e7d4b0d68bec67259b460c5
+
 management:
   endpoints:
     web:
@@ -34,6 +36,12 @@ management:
   endpoint:
     health:
       show-details: always
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
+
 logging:
   level:
     org:
